@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Safrin Nada Ramdani</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,20 +16,31 @@
       <h1 class="h5 m-0">Safrin Nada Ramdani</h1>
     </div>
   </header>
-
   <!-- Spacer for fixed header -->
   <div style="height: 72px;"></div>
-
   <!-- Hero / About Me -->
-  <section id="about" class="text-white d-flex align-items-center section animate">
+  <section id="about" class="text-white d-flex align-items-center section animate" style="min-height: 100vh; background: linear-gradient(135deg, #0d1b2a, #1b263b);">
     <div class="container-custom text-center">
+      <!-- Foto Profil -->
+      <img src="img/gweh.JPG" class="img-fluid rounded-circle shadow mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #415a77;">
+      <div class="social-links mb-3">
+        <a href="https://github.com/Danz08" target="_blank" class="text-white mx-2">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://instagram.com/sn.ramdani" target="_blank" class="text-white mx-2">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+      </div>
+      <!-- Nama -->
       <h2 class="mb-3">Hi, Saya Safrin Nada Ramdani</h2>
-      <p class="lead small-text">
-        Seorang Mahasiswa Semester 4 Universitas Riau yang sedang belajar menjadi Web Developer
+      <!-- Deskripsi -->
+      <p class="lead medium-text">
+        Seorang Mahasiswa Semester 4 Universitas Riau <br>
+        yang sedang belajar menjadi Web Developer
       </p>
     </div>
   </section>
-
+  
   <!-- Projects -->
   <header class="bg-dark-blue text-white py-3 fixed-top shadow-sm z-3">
     <div class="container">
@@ -35,16 +48,15 @@
     </div>
   </header>
   
-  
-  <section id="projects" class="bg-secondary-blue text-white d-flex align-items-center section animate">
+  <section id="projects" class="text-white d-flex align-items-center section animate">
     <div class="container">
-      <h2 class="text-center mb-5 fw-bold">My Projects</h2>
+      <h2 class="text-center mb-5 fw-bold">Proyek Saya</h2>
       <div class="row justify-content-center g-4">
         <!-- Project 1 -->
         <div class="col-md-6 col-lg-4">
           <div class="card bg-dark text-white h-100 project-card">
             <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Project 1</h5>
+              <h5 class="card-title fw-bold">Proyek 1</h5>
               <img src="img/Wordpress.png" class="card-img-top mt-2" alt="Project 1" />
               <p class="card-text mt-3">Pembuatan Website Tugas (Wordpress)</p>
             </div>
@@ -54,19 +66,9 @@
         <div class="col-md-6 col-lg-4">
           <div class="card bg-dark text-white h-100 project-card">
             <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Project 2</h5>
+              <h5 class="card-title fw-bold">Proyek 2</h5>
               <img src="img/C++.png" class="card-img-top mt-2" alt="Project 2" />
               <p class="card-text mt-3">Membuat Aplikasi Drive Thru (C++)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card bg-dark text-white h-100 project-card">
-            <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Project 3</h5>
-              <img src="img/tank.png" class="card-img-top mt-2" alt="Project 3" />
-              <p class="card-text mt-3">Membuat Game Sederhana (C#)</p>
             </div>
           </div>
         </div>
@@ -74,7 +76,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="card bg-dark text-white h-100 project-card">
             <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Project 4</h5>
+              <h5 class="card-title fw-bold">Proyek 3</h5>
               <img src="img/PHP.jpg" class="card-img-top mt-2" alt="Project 4" />
               <p class="card-text mt-3">Membuat Website Pendaftaran Siswa Sederhana (PHP)</p>
             </div>
@@ -84,47 +86,41 @@
     </div>
   </section>
   
-
-  <!-- Experience -->
-  <section id="experience" class="text-white d-flex align-items-center section animate">
-    <div class="container-custom">
-      <h2 class="text-center mb-5">Experience</h2>
+  <section id="experience" class="bg-dark-blue text-white d-flex align-items-center section animate">
+    <div class="container">
+      <h2 class="text-center">Pengalaman Saya</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h5>Organisasi Siswa Intra Madrasah </h5>
-            <p>2022 - 2023</p>
-            <p>Menjabat sebagai Wakil Ketua OSIM</p>
+        <div class="timeline-item left">
+          <div class="content">
+            <h5>Organisasi Siswa Intra Madrasah</h5>
+            <small>2022 - 2023</small>
+            <p>Wakil Ketua OSIM yang mengkoordinasi kegiatan siswa dan pengembangan kepemimpinan sekolah.</p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
+        <div class="timeline-item right">
+          <div class="content">
             <h5>Himpunan Mahasiswa Teknik Elektro</h5>
-            <p>2025 - present</p>
-            <p>Menjabat sebagai Anggota Departemen Pendidikan</p>
+            <small>2025 - Sekarang</small>
+            <p>Anggota Departemen Pendidikan, bertanggung jawab pada penyelenggaraan pelatihan internal dan eksternal.</p>
           </div>
         </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <h5>Enggineering Robotic Club</h5>
-            <p>2025 - Present</p>
-            <p>Menjabat sebagai Anggota Human Resources.</p>
+        <div class="timeline-item left">
+          <div class="content">
+            <h5>Engineering Robotic Club</h5>
+            <small>2025 - Sekarang</small>
+            <p>Anggota Human Resources, berperan dalam pengembangan dan rekrutmen anggota baru ERC.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Footer -->
   <footer class="bg-dark-blue text-white text-center py-3">
     <div class="container-custom">
-      <p class="mb-0">&copy; 2025 Portofolio Saya. All rights reserved.</p>
+      <p class="mb-0">&copy; 2025 Safrin Nada Ramdani. All rights reserved.</p>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>

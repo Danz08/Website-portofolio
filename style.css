@@ -59,32 +59,37 @@ body {
   object-fit: cover;
 }
 
-/* Timeline (Experience) */
-.timeline {
-  position: relative;
-  margin-left: 20px;
-  padding-left: 20px;
-  border-left: 2px solid #fff;
+.experience-section {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 80px 20px;
+}
+
+.text-accent {
+  color: #00b4d8;
 }
 
 .timeline-item {
-  position: relative;
-  margin-bottom: 40px;
+  border-left: 3px solid #00b4d8;
+  padding: 15px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
 }
 
-.timeline-marker {
-  position: absolute;
-  left: -10px;
-  top: 0;
-  width: 16px;
-  height: 16px;
-  background-color: #00bfff;
-  border-radius: 50%;
+.timeline-item h5 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
-.timeline-content {
-  padding-left: 20px;
-  transition: transform 0.3s ease;
+.timeline-item small {
+  color: #bbb;
+}
+
+.timeline-item p {
+  margin: 5px 0 0;
 }
 
 /* Hover Effects */
