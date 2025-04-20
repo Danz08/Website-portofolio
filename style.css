@@ -1,0 +1,124 @@
+body {
+  background-color: #0d1b2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.bg-dark-blue {
+  background-color: #071a2b !important;
+}
+
+.bg-secondary-blue {
+  background-color: #1b2e4b;
+}
+
+.project-card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+}
+
+.project-card img.card-img-top {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.container-custom {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header khusus */
+.container-header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+.small-text {
+  font-size: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Timeline (Experience) */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #fff;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #00bfff;
+  border-radius: 50%;
+}
+
+.timeline-content {
+  padding-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effects */
+.project-card:hover,
+.timeline-content:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Animasi scroll (zoom in) */
+.animate {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.6s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (max-width: 768px) {
+  .small-text {
+    font-size: 0.9rem;
+  }
+
+  .timeline {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .timeline-marker {
+    width: 12px;
+    height: 12px;
+  }
+}
