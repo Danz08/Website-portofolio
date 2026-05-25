@@ -1,126 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Safrin Nada Ramdani</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safrin Nada Ramdani — Full-Stack Developer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header class="bg-dark-blue text-white py-3 fixed-top shadow-sm z-3">
-    <div class="container-header">
-      <h1 class="h5 m-0">Safrin Nada Ramdani</h1>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">SNR&nbsp;/&nbsp;Portfolio</div>
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav_about">About</a></li>
+    <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+    <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+    <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+    <li><a href="#education" data-i18n="nav_education">Education</a></li>
+    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <div class="lang-toggle">
+      <span id="lang-en" class="active">EN</span> / <span id="lang-id">ID</span>
     </div>
-  </header>
-  <!-- Spacer for fixed header -->
-  <div style="height: 72px;"></div>
-  <!-- Hero / About Me -->
-  <section id="about" class="text-white d-flex align-items-center section animate" style="min-height: 100vh; background: linear-gradient(135deg, #0d1b2a, #1b263b);">
-    <div class="container-custom text-center">
-      <!-- Foto Profil -->
-      <img src="img/gweh.JPG" class="img-fluid rounded-circle shadow mb-4" style="width: 150px; height: 150px; object-fit: cover; border: 4px solid #415a77;">
-      <div class="social-links mb-3">
-        <a href="https://github.com/Danz08" target="_blank" class="text-white mx-2">
-          <i class="fab fa-github fa-2x"></i>
-        </a>
-        <a href="https://instagram.com/sn.ramdani" target="_blank" class="text-white mx-2">
-          <i class="fab fa-instagram fa-2x"></i>
-        </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg-text">DEV</div>
+  <div class="hero-tag" data-i18n="hero_tag">Full-Stack Developer · Pekanbaru, Indonesia</div>
+  <div class="hero-title-wrapper">
+    <h1 class="hero-name">
+      Safrin<br>
+      Nada <em>Ramdani</em>
+    </h1>
+    <div class="hero-img-wrapper">
+      <img src="img/gweh.JPG" alt="Safrin Nada Ramdani">
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <p class="hero-desc" data-i18n="hero_desc">
+      Final-year Informatics Engineering student building elegant, high-impact web systems. React, CodeIgniter 4 & Python — code that solves real problems.
+    </p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn-primary" data-i18n="hero_cta">
+        Let's Connect
+        <span>→</span>
+      </a>
+      <div class="hero-scroll" data-i18n="hero_scroll">
+        <div class="scroll-line"></div>
+        Scroll to explore
       </div>
-      <!-- Nama -->
-      <h2 class="mb-3">Hi, Saya Safrin Nada Ramdani</h2>
-      <!-- Deskripsi -->
-      <p class="lead medium-text">
-        Seorang Mahasiswa Semester 4 Universitas Riau <br>
-        yang sedang belajar menjadi Web Developer
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrapper">
+  <div class="marquee-track" id="marqueeTrack">
+    <div class="marquee-item">React <span>✦</span></div>
+    <div class="marquee-item">CodeIgniter 4 <span>✦</span></div>
+    <div class="marquee-item">Python <span>✦</span></div>
+    <div class="marquee-item">Full-Stack Dev <span>✦</span></div>
+    <div class="marquee-item">IoT <span>✦</span></div>
+    <div class="marquee-item">OOP <span>✦</span></div>
+    <div class="marquee-item">Project Management <span>✦</span></div>
+    <div class="marquee-item">IEEE Paper Author <span>✦</span></div>
+    <div class="marquee-item">React <span>✦</span></div>
+    <div class="marquee-item">CodeIgniter 4 <span>✦</span></div>
+    <div class="marquee-item">Python <span>✦</span></div>
+    <div class="marquee-item">Full-Stack Dev <span>✦</span></div>
+    <div class="marquee-item">IoT <span>✦</span></div>
+    <div class="marquee-item">OOP <span>✦</span></div>
+    <div class="marquee-item">Project Management <span>✦</span></div>
+    <div class="marquee-item">IEEE Paper Author <span>✦</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label" data-i18n="sec_about_label">01 — About Me</div>
+  <div class="about-grid reveal">
+    <div>
+      <h2 class="about-heading" data-i18n="about_heading">
+        Building the<br>
+        web, one<br>
+        <em>system</em> at a time.
+      </h2>
+    </div>
+    <div class="about-right">
+      <p class="about-text" data-i18n="about_text_1">
+        I'm a final-year Informatics Engineering student at Universitas Riau with a strong passion for crafting clean, functional web applications. I recently built an Activity Documentation System using CodeIgniter 4, streamlining real administrative workflows at PT Bumi Siak Pusako.
+      </p>
+      <p class="about-text" data-i18n="about_text_2">
+        Beyond code, I authored an IEEE-standard scientific paper on that exact system — bridging engineering and academic research. A graduate of Coding Camp by DBS Foundation, nominated as Best Student, I bring both technical depth and leadership experience from student organizations.
+      </p>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-number">4+</div>
+          <div class="stat-label" data-i18n="stat_1">Months at Coding Camp</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2+</div>
+          <div class="stat-label" data-i18n="stat_2">Years in Organizations</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">5</div>
+          <div class="stat-label" data-i18n="stat_3">Certifications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label" data-i18n="sec_skills_label">02 — Tech Stack</div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <span class="skill-icon">⚡</span>
+      <div class="skill-name">Frontend</div>
+      <div class="skill-desc" data-i18n="skill_frontend_desc">Building interactive, responsive interfaces with modern frameworks.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🛠️</span>
+      <div class="skill-name">Backend</div>
+      <div class="skill-desc" data-i18n="skill_backend_desc">Developing robust server-side systems and RESTful APIs.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">CodeIgniter 4</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">REST API</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">📱</span>
+      <div class="skill-name">Mobile & IoT</div>
+      <div class="skill-desc" data-i18n="skill_mobile_desc">Exploring connected systems and Android app development.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Android</span>
+        <span class="skill-tag">IoT</span>
+        <span class="skill-tag">Hardware</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">🧠</span>
+      <div class="skill-name">Programming</div>
+      <div class="skill-desc" data-i18n="skill_prog_desc">Strong foundation in programming paradigms and logic.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">OOP</span>
+        <span class="skill-tag">Algorithms</span>
+        <span class="skill-tag">Data Structures</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">📊</span>
+      <div class="skill-name" data-i18n="skill_mgmt_name">Management</div>
+      <div class="skill-desc" data-i18n="skill_mgmt_desc">Leading teams, coordinating programs, administrative management.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">Project Mgmt</span>
+        <span class="skill-tag">Leadership</span>
+        <span class="skill-tag">Secretary</span>
+      </div>
+    </div>
+    <div class="skill-card reveal">
+      <span class="skill-icon">✍️</span>
+      <div class="skill-name" data-i18n="skill_research_name">Research & Writing</div>
+      <div class="skill-desc" data-i18n="skill_research_desc">IEEE-standard scientific paper author. Academic writing in English.</div>
+      <div class="skill-tags">
+        <span class="skill-tag">IEEE Paper</span>
+        <span class="skill-tag">Technical Writing</span>
+        <span class="skill-tag">Research</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label" data-i18n="sec_projects_label">03 — Projects</div>
+  <div class="projects-grid">
+    <a href="#" class="project-card reveal">
+      <div class="project-img-wrapper">
+        <img src="img/hapi.png" alt="HAPI Application">
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">HAPI Application</h3>
+        <p class="project-desc" data-i18n="proj_hapi_desc">A mental health and habit-tracking web application featuring secure Google OAuth onboarding, interactive dashboards, and light/dark theme toggle.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Express</span>
+          <span class="skill-tag">EJS</span>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="project-card reveal">
+      <div class="project-img-wrapper">
+        <img src="img/kampusku.png" alt="KampusKu Scholarship">
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">KampusKu Scholarship</h3>
+        <p class="project-desc" data-i18n="proj_kampusku_desc">A robust scholarship management system supporting role-based access (Admin/User), secure document uploads, and real-time application tracking for BNSP certification.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">MERN Stack</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">React</span>
+        </div>
+      </div>
+    </a>
+    <a href="#" class="project-card reveal">
+      <div class="project-img-wrapper">
+        <img src="img/bsp.png" alt="Activity Documentation System">
+      </div>
+      <div class="project-info">
+        <h3 class="project-title" data-i18n="proj_bsp_name">Activity Documentation System</h3>
+        <p class="project-desc" data-i18n="proj_bsp_desc">An end-to-end information system built to digitize and streamline administrative workflows for PT Bumi Siak Pusako.</p>
+        <div class="skill-tags">
+          <span class="skill-tag">CodeIgniter 4</span>
+          <span class="skill-tag">PHP</span>
+          <span class="skill-tag">MySQL</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-label" data-i18n="sec_exp_label">04 — Experience</div>
+  <div class="exp-list">
+
+    <div class="exp-item reveal">
+      <div class="exp-date">
+        <div class="exp-dot"></div>
+        Feb 2026 — Present<br>
+        <span style="color:rgba(255,77,28,0.5); font-size:10px;" data-i18n="exp_dur_1">4 months</span>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Fullstack Web Developer</div>
+        <div class="exp-company">Coding Camp × DBS Foundation</div>
+        <p class="exp-desc" data-i18n="exp_desc_1">Participated in an intensive full-stack web development training program with strong focus on back-end technologies. Implemented industry-standard practices throughout. Nominated as Best Student candidate for outstanding performance.</p>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">
+        <div class="exp-dot"></div>
+        Nov 2025 — Present<br>
+        <span style="color:rgba(255,77,28,0.5); font-size:10px;" data-i18n="exp_dur_2">Management Staff</span>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Engineering Robotics Club</div>
+        <div class="exp-company">Universitas Riau</div>
+        <p class="exp-desc" data-i18n="exp_desc_2">Serving as Management Staff (Nov 2025 – present) after one year as Human Resource Staff (Jan–Nov 2025). Overseeing organizational operations, member welfare, and club programs. Total tenure: 1 year 5 months.</p>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">
+        <div class="exp-dot"></div>
+        Jan–Feb 2026<br>
+        <span style="color:rgba(255,77,28,0.5); font-size:10px;" data-i18n="exp_dur_3">2 months</span>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role">Fullstack Developer</div>
+        <div class="exp-company">PT Bumi Siak Pusako · Pekanbaru</div>
+        <p class="exp-desc" data-i18n="exp_desc_3">Built an end-to-end Activity Documentation Information System using CodeIgniter 4, digitizing and improving administrative workflows. Authored an IEEE-standard scientific paper on the system's architecture, submitted to the Informatics Today journal.</p>
+      </div>
+    </div>
+
+    <div class="exp-item reveal">
+      <div class="exp-date">
+        <div class="exp-dot"></div>
+        Jan 2025–Feb 2026<br>
+        <span style="color:rgba(255,77,28,0.5); font-size:10px;" data-i18n="exp_dur_4">1 year 2 months</span>
+      </div>
+      <div class="exp-content">
+        <div class="exp-role" data-i18n="exp_role_4">Secretary General → Head of Education → Staff</div>
+        <div class="exp-company">HIMATRO · Universitas Riau</div>
+        <p class="exp-desc" data-i18n="exp_desc_4">Rose through the student association under the Kesatria Cabinet — from Education Staff to Head of Education, culminating as Secretary General. Managed administrative tasks, bridged communication between departments, and coordinated major programs including the university-level LKMO Leadership Training.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certs">
+  <div class="section-label" data-i18n="sec_certs_label">05 — Certifications</div>
+  <div class="certs-grid">
+    <div class="cert-card reveal">
+      <div class="cert-num">01</div>
+      <div class="cert-name" data-i18n="cert_1">Learning to Build Android Apps for Beginners</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-num">02</div>
+      <div class="cert-name" data-i18n="cert_2">Introduction to Programming Logic (Programming Logic 101)</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-num">03</div>
+      <div class="cert-name" data-i18n="cert_3">Certificate Stage 2 – Module 2: IoT (Device & Hardware Discovery)</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-num">04</div>
+      <div class="cert-name" data-i18n="cert_4">Getting Started with Basic Programming to Become a Software Developer</div>
+    </div>
+    <div class="cert-card reveal">
+      <div class="cert-num">05</div>
+      <div class="cert-name" data-i18n="cert_5">Fundamental Project Management</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-label" data-i18n="sec_edu_label">06 — Education</div>
+  <div class="edu-block reveal">
+    <div class="edu-visual">
+      <div class="edu-ring"></div>
+      <div class="edu-ring"></div>
+      <div class="edu-ring"></div>
+      <div class="edu-center">
+        <div class="edu-year">2027</div>
+        <div class="edu-label" data-i18n="edu_expected">Expected</div>
+      </div>
+    </div>
+    <div class="edu-info">
+      <h3 class="edu-degree" data-i18n="edu_degree">Bachelor of Engineering in Informatics</h3>
+      <div class="edu-school">Universitas Riau</div>
+      <div class="edu-period">Aug 2023 — 2027 · Pekanbaru, Riau</div>
+      <p style="margin-top:24px; font-size:14px; color:var(--muted); line-height:1.8;" data-i18n="edu_desc">
+        Final-year student in S1 Teknik Informatika with a focus on web development, systems engineering, and IoT. Active in multiple student organizations, academic research, and external training programs.
       </p>
     </div>
-  </section>
-  
-  <!-- Projects -->
-  <header class="bg-dark-blue text-white py-3 fixed-top shadow-sm z-3">
-    <div class="container">
-      <h1 class="h5 m-0">Safrin Nada Ramdani</h1>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label" data-i18n="sec_contact_label">07 — Get in Touch</div>
+  <div class="contact-inner">
+    <h2 class="contact-big reveal" data-i18n="contact_heading">
+      Let's build<br>
+      something <em>great</em><br>
+      together.
+    </h2>
+    <div class="contact-links reveal">
+      <a href="mailto:safrinnramdani@gmail.com" class="contact-link">
+        <div>
+          <div>safrinnramdani@gmail.com</div>
+          <div class="contact-sub" data-i18n="contact_sub_1">Email · Let's talk</div>
+        </div>
+        <span class="contact-link-icon">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/safrinnadaramdani" target="_blank" class="contact-link">
+        <div>
+          <div>linkedin.com/in/safrinnadaramdani</div>
+          <div class="contact-sub" data-i18n="contact_sub_2">LinkedIn · Connect with me</div>
+        </div>
+        <span class="contact-link-icon">↗</span>
+      </a>
+      <a href="tel:082217214439" class="contact-link">
+        <div>
+          <div>+62 822-1721-4439</div>
+          <div class="contact-sub" data-i18n="contact_sub_3">Phone / WhatsApp</div>
+        </div>
+        <span class="contact-link-icon">↗</span>
+      </a>
     </div>
-  </header>
-  
-  <section id="projects" class="text-white d-flex align-items-center section animate">
-    <div class="container">
-      <h2 class="text-center mb-5 fw-bold">Proyek Saya</h2>
-      <div class="row justify-content-center g-4">
-        <!-- Project 1 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card bg-dark text-white h-100 project-card">
-            <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Proyek 1</h5>
-              <img src="img/Wordpress.png" class="card-img-top mt-2" alt="Project 1" />
-              <p class="card-text mt-3">Pembuatan Website Tugas (Wordpress)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card bg-dark text-white h-100 project-card">
-            <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Proyek 2</h5>
-              <img src="img/C++.png" class="card-img-top mt-2" alt="Project 2" />
-              <p class="card-text mt-3">Membuat Aplikasi Drive Thru (C++)</p>
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="col-md-6 col-lg-4">
-          <div class="card bg-dark text-white h-100 project-card">
-            <div class="card-body text-start">
-              <h5 class="card-title fw-bold">Proyek 3</h5>
-              <img src="img/PHP.jpg" class="card-img-top mt-2" alt="Project 4" />
-              <p class="card-text mt-3">Membuat Website Pendaftaran Siswa Sederhana (PHP)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <section id="experience" class="bg-dark-blue text-white d-flex align-items-center section animate">
-    <div class="container">
-      <h2 class="text-center">Pengalaman Saya</h2>
-      <div class="timeline">
-        <div class="timeline-item left">
-          <div class="content">
-            <h5>Organisasi Siswa Intra Madrasah</h5>
-            <small>2022 - 2023</small>
-            <p>Wakil Ketua OSIM yang mengkoordinasi kegiatan siswa dan pengembangan kepemimpinan sekolah.</p>
-          </div>
-        </div>
-        <div class="timeline-item right">
-          <div class="content">
-            <h5>Himpunan Mahasiswa Teknik Elektro</h5>
-            <small>2025 - Sekarang</small>
-            <p>Anggota Departemen Pendidikan, bertanggung jawab pada penyelenggaraan pelatihan internal dan eksternal.</p>
-          </div>
-        </div>
-        <div class="timeline-item left">
-          <div class="content">
-            <h5>Engineering Robotic Club</h5>
-            <small>2025 - Sekarang</small>
-            <p>Anggota Human Resources, berperan dalam pengembangan dan rekrutmen anggota baru ERC.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="bg-dark-blue text-white text-center py-3">
-    <div class="container-custom">
-      <p class="mb-0">&copy; 2025 Safrin Nada Ramdani. All rights reserved.</p>
-    </div>
-  </footer>
-  <script src="script.js"></script>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-copy" data-i18n="footer_copy">© 2026 Safrin Nada Ramdani · Pekanbaru, Indonesia</div>
+  <a href="#hero" class="footer-back" data-i18n="footer_back">↑ Back to top</a>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
